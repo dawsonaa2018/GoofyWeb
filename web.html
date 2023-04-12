@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Quote Builder</title>
+    <script src="quote_builder.js"></script>
+  </head>
+  <body>
+    <button id="toggleButton" onclick="togglePage()">View Services and Prices</button>
+    <div id="quoteBuilder">
+      <h1>Quote Builder</h1>
+      <form id="quoteForm">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput"><br><br>
+        <label for="phoneInput">Phone:</label>
+        <input type="text" id="phoneInput"><br><br>
+        <label for="emailInput">Email:</label>
+        <input type="text" id="emailInput"><br><br>
+        <label for="servicesInput">Services:</label><br>
+        <select id="dataTransferSelect">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> Data transfer ($80)<br>
+        <select id="modularPartInstallSelect">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> Modular part install ($40)<br>
+        <select id="diagNoServiceSelect">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> Diagnostic with no further service ($10)<br>
+        <select id="diagWithServiceSelect">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> Diagnostic with further service (fee waived)<br>
+        <select id="nonModularPartInstallSelect">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> Non-modular part install ($100)<br><br>
+        <button type="submit" onclick="submitQuote()">Submit Quote</button>
+      </form>
+      <p>Total: $<span id="totalCost">0</span></p>
+    </div>
+    <div id="servicesPage" style="display:none;">
+      <h1>Services and Prices</h1>
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Data transfer</td>
+          <td>$80</td>
+        </tr>
+        <tr>
+          <td>Modular part install</td>
+          <td>$40</td>
+        </tr>
+        <tr>
+          <td>Diagnostic with no further service</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Diagnostic with further service (fee waived)</td>
+         
