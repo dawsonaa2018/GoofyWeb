@@ -1,0 +1,103 @@
+/* Set the background color to a light green */
+body {
+  background-color: #c9e9d9;
+}
+
+/* Set the font to San Francisco (Apple's default font) */
+body, button, select, input {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Style the h1 tag to be bold and centered */
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Style the table for the services page */
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+
+/* Set the background color for table headers and rows */
+th, td {
+  background-color: #f5f5f5;
+}
+
+/* Add padding to table cells */
+th, td {
+  padding: 8px;
+}
+
+/* Style the submit button to match Apple's design */
+button[type="submit"] {
+  background-color: #007aff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the toggle button to match Apple's design */
+#toggleButton {
+  background-color: #007aff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+/* Add a shadow to the quote builder div to give it depth */
+#quoteBuilder {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+/* Style the input fields */
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+/* Style the select fields */
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+/* Style the selected option in select fields */
+option:checked {
+  background-color: #007aff;
+  color: #fff;
+}
+
+/* Style the total cost span */
+#totalCost {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007aff;
+}
+
+/* Style the services page to match Apple's design */
+#servicesPage {
+  background-color: #c9e9d9;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
