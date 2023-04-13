@@ -6,6 +6,10 @@ body {
 /* Set the font to San Francisco (Apple's default font) */
 body, button, select, input {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style the h1 tag to be bold and centered */
